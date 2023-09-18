@@ -1,0 +1,136 @@
+#layout{
+    width: 100%;
+    padding: 150px 0;
+
+    .inner{
+        width: 1210px;
+        margin: 0 auto;
+        position: relative;
+
+        h1{
+            font: bold 30px/1 "Nanum Myeongjo";
+            text-align: left;
+            border-bottom: 1px solid #000;
+            padding: 20px 0px;
+        }
+        .lay{
+            width: 100%;
+
+            article{
+                width: 280px;
+                float: left;
+                margin-right: 30px;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+                .pic1{
+                    width: 100%;
+                    height: 200px;
+                    overflow: hidden;
+                    margin-top: 40px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all 0.5s;
+                    }
+                    a{
+                        text-align: center;
+                        font-size: 4vw;
+                        color: #fff;
+                        position: absolute;
+                        margin-top: 60px;
+                        margin-left: -180px;
+                        opacity: 0;
+                        }
+                        &:hover{
+                            img{
+                                opacity: 70%;
+                            }
+                            a{
+                                opacity: 1;
+                                transition: 0.5s;
+                            }
+                        }
+                }
+                h2{
+                    font: normal 25px/1 arial;
+                    margin-top: 15px;
+                    border-bottom: 1px solid #000;
+                    padding: 5px;
+                }
+                p{
+                    font: normal 13px/1 arial;
+                    color: #555;
+                    margin-top: 10px;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1199px){
+    #layout {
+		padding: 100px 30px 450px;
+		.inner {
+			width: 100%;
+			.lay {
+				article {
+					width: 49%;
+					margin-right: 2%;
+					margin-top: -15px;
+					&:nth-of-type(2n) {
+						margin-right: 0;
+					}
+					.pic1 {
+						height: 20vmax;
+                        a{
+                            font-size: 8vw;
+                            margin-left: -30%;
+                        }
+					}
+                    h2{
+                        font: normal 150%/1 arial;
+                    }
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width:310px){
+    #layout {
+		padding: 100px 30px 450px;
+		.inner {
+			width: 100%;
+			.lay {
+				article {
+					width: 49%;
+					margin-right: 2%;
+					margin-top: -15px;
+					&:nth-of-type(2n) {
+						margin-right: 0;
+					}
+					.pic1 {
+						height: 20vmax;
+                        a{
+                            font-size: 5vw;
+                        }
+					}
+                    h2{
+                        font: normal 100%/1 arial;
+                    }
+				}
+			}
+		}
+	}
+
+}
+	
+
+
+
